@@ -51,11 +51,12 @@ public class Prodotto {
         this.iva = iva;
     }
     
-    public void showInfo() {
-    	 System.out.println("Codice: " + getCodice());
-         System.out.println("Nome: " + getNome());
-         System.out.println("Marca: " + getMarca());
-         System.out.println("Prezzo: " + getPrezzo());
-         System.out.println("IVA: " + getIva());
+    @Override
+    public String toString() {
+        return "Codice: " + codice +
+                ", Nome: " + nome +
+                ", Marca: " + marca +
+                ", Prezzo: " + prezzo +
+                ", IVA: " + iva;
     }
 }
